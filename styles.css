@@ -65,3 +65,26 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
+/* media queries */
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .img-container {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 2em auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
