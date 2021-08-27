@@ -24,12 +24,12 @@ document.querySelector("button").addEventListener("mouseup", function () {
       searchStr = searchStr.slice(0, -1);
       document.getElementById(
         "activity-img"
-      ).src = `https://source.unsplash.com/daily?${searchStr}`;
+      ).src = `https://source.unsplash.com/featured/?${searchStr}`;
       document.getElementById(
         "activity-img-1"
-      ).src = `https://source.unsplash.com/weekly?${searchStr}`;
+      ).src = `https://source.unsplash.com/daily?${searchStr}`;
       document.getElementById(
         "activity-img-2"
-      ).src = `https://source.unsplash.com/featured/?${searchStr}`;
+      ).src = `https://source.unsplash.com/weekly?${searchStr}`;
     });
 });
