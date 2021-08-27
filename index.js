@@ -15,13 +15,14 @@ document.querySelector("button").addEventListener("mouseup", function () {
       document.querySelector("h4").textContent = data.activity;
       document.getElementById("main-title").textContent = "🦾 HappyBot🦿";
       const keywords = data.activity.split(" ");
-      let searchStr = "";
+      let searchStr = data.type + ", ";
       for (let word of keywords) {
         if (word.length >= 3) {
           searchStr += word + ",";
         }
       }
       searchStr = searchStr.slice(0, -1);
+      console.log(searchStr);
       document.getElementById(
         "activity-img"
       ).src = `https://source.unsplash.com/featured/?${searchStr}`;

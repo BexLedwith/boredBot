@@ -72,6 +72,12 @@ img {
     font-size: 1rem;
   }
 
+  button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+
   .img-container {
     flex-direction: column;
   }
