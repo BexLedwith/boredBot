@@ -17,7 +17,7 @@ document.querySelector("button").addEventListener("mouseup", function () {
       const keywords = data.activity.split(" ");
       let searchStr = "";
       for (let word of keywords) {
-        if (word.length >= 2) {
+        if (word.length >= 3) {
           searchStr += word + ",";
         }
       }
